@@ -1,68 +1,114 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="13" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="0.81">
-    <testcase classname="User should be able to register to the system" name="User register with valid data" time="0.008">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user Enter valid data and click on register button.....................undefined
-Then system redirects to registration confirmation page and  display success notification.skipped
+<testsuite errors="0" failures="4" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="13" time="345.81">
+    <testcase classname="User should be able to register to the system" name="User register with valid data" time="23.149">
+        <system-out><![CDATA[When user Enter valid data and click on register button.....................passed
+Then system redirects to registration confirmation page and  display success notification.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User should be able to Login to the system" name="user Login with valid data" time="53.756">
+        <system-out><![CDATA[When user Enter valid data in "amany.atef@gamil.com" and "123456"...........passed
+Then system redirects to Home page and system display Account tab...........passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can switch between Currencies" name="user switch currencies successfully" time="19.192">
+        <system-out><![CDATA[Given user Enter valid data in "amany.atef@gamil.com" and "123456"..........passed
+When Select currency........................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can Search for product" name="user Search for product successfully" time="16.867">
+        <system-out><![CDATA[When Search.................................................................passed
+Then system redirects to search result page.................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can hover on Subcategory" name="user hover on Subcategory successfully" time="19.815">
+        <system-out><![CDATA[Given Select computer category..............................................passed
+When hover on sub category..................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can Click on homepage slider" name="user can see product1 details through the Slider" time="15.207">
+        <failure message="Expected condition failed: waiting for url to contain &quot;https://demo.nopcommerce.com/nokia-lumia-1020&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'AMANY-ATEF', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\AMANY~1.ATE\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61984/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 5b36abc4fa22e22108f2c30a3d623981" type="org.openqa.selenium.TimeoutException"><![CDATA[When Click on  Slider First picture.........................................passed
+Then System redirects to product-Nokia details page.........................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "https://demo.nopcommerce.com/nokia-lumia-1020". Current url: "https://demo.nopcommerce.com/" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'AMANY-ATEF', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\AMANY~1.ATE\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:61984}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61984/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 5b36abc4fa22e22108f2c30a3d623981
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at stepDefinition.D06_homeSlidersStepDef.Details_First_Product_Opened(D06_homeSlidersStepDef.java:22)
+	at ✽.System redirects to product-Nokia details page(file:///D:/Automation/E-commerceAppAutomationTesting/src/main/resources/features/F06_homeSliders.feature:6)
 ]]></failure>
     </testcase>
-    <testcase classname="User should be able to Login to the system" name="user Login with valid data" time="0.001">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When user Enter valid data in "amany.atef@gamil.com" and "123456"...........undefined
-Then system redirects to Home page and system display Account tab...........skipped
+    <testcase classname="User can Click on homepage slider" name="user can see product2 details through the Slider" time="17.028">
+        <failure message="Expected condition failed: waiting for url to contain &quot;https://demo.nopcommerce.com/iphone-6&quot;. Current url: &quot;https://demo.nopcommerce.com/&quot; (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'AMANY-ATEF', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\AMANY~1.ATE\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62021/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 04857cc3d5e7abe6b830ffb48374f474" type="org.openqa.selenium.TimeoutException"><![CDATA[When Click on sub Slider Second picture.....................................passed
+Then System redirects to product-Iphone details page........................failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for url to contain "https://demo.nopcommerce.com/iphone-6". Current url: "https://demo.nopcommerce.com/" (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'AMANY-ATEF', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\AMANY~1.ATE\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62021}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62021/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 04857cc3d5e7abe6b830ffb48374f474
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at stepDefinition.D06_homeSlidersStepDef.Details_Second_Product_Opened(D06_homeSlidersStepDef.java:33)
+	at ✽.System redirects to product-Iphone details page(file:///D:/Automation/E-commerceAppAutomationTesting/src/main/resources/features/F06_homeSliders.feature:10)
 ]]></failure>
     </testcase>
-    <testcase classname="User can switch between Currencies" name="user switch currencies successfully" time="0.001">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given user Enter valid data in "amany.atef@gamil.com" and "123456"..........undefined
-When Select currency........................................................skipped
-]]></failure>
+    <testcase classname="User can Follow the website pages on social media" name="user opens facebook link" time="45.379">
+        <system-out><![CDATA[When User click on facebook link............................................passed
+Then "facebook" is opened in new tab........................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="User can Search for product" name="user Search for product successfully" time="0.001">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When Search.................................................................undefined
-Then system redirects to search result page.................................skipped
-]]></failure>
+    <testcase classname="User can Follow the website pages on social media" name="user opens twitter link" time="11.961">
+        <system-out><![CDATA[When User click on twitter link.............................................passed
+Then "twitter" is opened in new tab.........................................passed
+]]></system-out>
     </testcase>
-    <testcase classname="User can hover on Subcategory" name="user hover on Subcategory successfully" time="0.013">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given Select computer category..............................................undefined
-When hover on sub category..................................................skipped
-]]></failure>
-    </testcase>
-    <testcase classname="User can Click on homepage slider" name="user can see product1 details through the Slider" time="0.002">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When Click on  Slider First picture.........................................undefined
-Then System redirects to product-Nokia details page.........................skipped
-]]></failure>
-    </testcase>
-    <testcase classname="User can Click on homepage slider" name="user can see product2 details through the Slider" time="0.001">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When Click on sub Slider Second picture.....................................undefined
-Then System redirects to product-Iphone details page........................skipped
-]]></failure>
-    </testcase>
-    <testcase classname="User can Follow the website pages on social media" name="user opens facebook link" time="0.009">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click on facebook link............................................undefined
-Then "facebook" is opened in new tab........................................skipped
-]]></failure>
-    </testcase>
-    <testcase classname="User can Follow the website pages on social media" name="user opens twitter link" time="0.002">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click on twitter link.............................................undefined
-Then "twitter" is opened in new tab.........................................skipped
-]]></failure>
-    </testcase>
-    <testcase classname="User can Follow the website pages on social media" name="user opens rss link" time="0">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click on rss link.................................................undefined
+    <testcase classname="User can Follow the website pages on social media" name="user opens rss link" time="13.344">
+        <failure message="Index 1 out of bounds for length 1" type="java.lang.IndexOutOfBoundsException"><![CDATA[When User click on rss link.................................................failed
 Then "rss" is opened in new tab.............................................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266)
+	at java.base/java.util.Objects.checkIndex(Objects.java:359)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at stepDefinition.D07_followUsStepDef.Rss(D07_followUsStepDef.java:33)
+	at ✽.User click on rss link(file:///D:/Automation/E-commerceAppAutomationTesting/src/main/resources/features/F07_followUs.feature:13)
 ]]></failure>
     </testcase>
-    <testcase classname="User can Follow the website pages on social media" name="user opens youtube link" time="0.001">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click on youtube link.............................................undefined
-Then "youtube" is opened in new tab.........................................skipped
+    <testcase classname="User can Follow the website pages on social media" name="user opens youtube link" time="50.516">
+        <system-out><![CDATA[When User click on youtube link.............................................passed
+Then "youtube" is opened in new tab.........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="User can add products to wishlist page" name="user adds products to wishlist page" time="15.582">
+        <failure message="Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on WINDOWS (b125b27219638e5e10f6ac07bacec774)] -&gt; class name: bar-notification] (tried for 5 second(s) with 500 milliseconds interval)&#10;Build info: version: '4.1.4', revision: '535d840ee2'&#10;System info: host: 'AMANY-ATEF', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\AMANY~1.ATE\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62302}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62302/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: b125b27219638e5e10f6ac07bacec774" type="org.openqa.selenium.TimeoutException"><![CDATA[When User click fav-icon for a product......................................passed
+Then System add them to wishlist page ,display success notification message and increase wishList Quantity.failed
+
+StackTrace:
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for invisibility of [[ChromeDriver: chrome on WINDOWS (b125b27219638e5e10f6ac07bacec774)] -> class name: bar-notification] (tried for 5 second(s) with 500 milliseconds interval)
+Build info: version: '4.1.4', revision: '535d840ee2'
+System info: host: 'AMANY-ATEF', ip: '192.168.1.122', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '16'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 101.0.4951.67, chrome: {chromedriverVersion: 101.0.4951.41 (93c720db8323..., userDataDir: C:\Users\AMANY~1.ATE\AppDat...}, goog:chromeOptions: {debuggerAddress: localhost:62302}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:62302/devtoo..., se:cdpVersion: 101.0.4951.67, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b125b27219638e5e10f6ac07bacec774
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at stepDefinition.D08_WishlistStepDef.Validate_Add_Product_To_Wishlist_Successfully(D08_WishlistStepDef.java:30)
+	at ✽.System add them to wishlist page ,display success notification message and increase wishList Quantity(file:///D:/Automation/E-commerceAppAutomationTesting/src/main/resources/features/F08_Wishlist.feature:6)
 ]]></failure>
     </testcase>
-    <testcase classname="User can add products to wishlist page" name="user adds products to wishlist page" time="0">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click fav-icon for a product......................................undefined
-Then System add them to wishlist page ,display success notification message and increase wishList Quantity.skipped
-]]></failure>
-    </testcase>
-    <testcase classname="User can add products to cart" name="user adds products to cart" time="0">
-        <failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[When User click add cart button for two products............................undefined
-Then System add products to cart  and increase rows of Shopping cart table..skipped
-]]></failure>
+    <testcase classname="User can add products to cart" name="user adds products to cart" time="42.897">
+        <system-out><![CDATA[When User click add cart button for two products............................passed
+Then System add products to cart  and increase rows of Shopping cart table..passed
+]]></system-out>
     </testcase>
 </testsuite>
